@@ -6,8 +6,6 @@ include_directories(
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/sys_log/ SYS_LOG_SRCS)
 
-link_directories(/usr/local/lib)
-
 add_library(sys_log SHARED ${SYS_LOG_SRCS})
 add_library(sys_log2 STATIC ${SYS_LOG_SRCS})
 set_target_properties(sys_log2 PROPERTIES OUTPUT_NAME "sys_log")

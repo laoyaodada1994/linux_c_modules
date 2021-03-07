@@ -6,7 +6,7 @@ all: clean build install
 	@cd $(BUILD_DIR);  make -j4
 
 clean:
-	@rm $(BUILD_DIR) $(BIN_DIR) -rf
+	@rm $(BUILD_DIR) $(BIN_DIR)  -rf
 build:
 	@mkdir $(BUILD_DIR); cd $(BUILD_DIR); cmake ..
 
