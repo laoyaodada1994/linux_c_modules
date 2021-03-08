@@ -29,4 +29,6 @@ void Assert(const uint8_t *file, const uint8_t *func, uint32_t line) {
     abort();
 }
 
+int8_t *Get_Cur_Path(void) { return get_current_dir_name(); }
+
 #undef CMD_BUF

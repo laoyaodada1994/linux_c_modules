@@ -14,7 +14,7 @@ install:
 	@cd $(BUILD_DIR); make install
 
 run:
-	@export LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):$(PWD)$(output)/lib/
+	@export LD_LIBRARY_PATH=$(PWD)/$(BIN_DIR)/lib/
 	@$(BIN_DIR)/bin/$(DEST_EXE_NAME)
 
 test:
